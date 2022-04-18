@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shenkar Web Engineering - Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Creative Design Registration</div>
+            <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get" autocomplete="off">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="fullName" pattern="^[a-zA-Z]+\s?[a-zA-Z]+$" placeholder="Enter Your Name" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="pass" pattern ="[a-z0-9]{5,10}" placeholder="Enter Your Password" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter Your Mail" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Website</span>
+                        <input type="url" name="website" placeholder="Enter Your Website" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="tel" name="phone" pattern="[0-9]+" maxlength="10" placeholder="Enter digits only" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Coffee</span>
+                        <input type="number" name = "coffee" placeholder="Enter number of Coffee cups" required min="0" max="15">  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Temper</span>
+                        <input type="range" name="temper" placeholder="Enter Your Temper" required>  
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" name="address" placeholder="Enter Your Address" required>  
+                    </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="Age">Age</span>
+                        <input type="number" name="age" id = "Age" placeholder="Enter Your Age" required min = "21" max = "28" value="21">   
+                    </div><br>
+                    <div class="Gender-Div">
+                        <input type="radio" name="gender" id = "FirstDot" value="Male">
+                        <input type="radio" name="gender" id = "SecondDot" value="Female">
+                        <span class="Gender-title">Gender</span>
+                        <div class="category">
+                            <label for="FirstDot">
+                                <span class="dot one"></span>
+                                <span class="Gender">Male</span>
+                            </label>
+                            <label for="SecondDot">
+                                <span class="dot two"></span>
+                                <span class="Gender">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="Interests-Div">
+                        <input type="checkbox" name="interests[]" id = "FirstBox" value = "Reading">
+                        <input type="checkbox" name="interests[]" id = "SecondBox" value = "Traveling">
+                        <input type="checkbox" name="interests[]" id = "ThirdBox" value = "Coding">
+                        <span class="Interests-title">Interests</span>
+                        <div class="category">
+                            <label for="FirstBox">
+                                <span class="square one"></span>
+                                <span class="Gender">Reading</span>
+                            </label>
+                            <label for="SecondBox">
+                                <span class="square two"></span>
+                                <span class="Gender">Traveling</span>
+                            </label>
+                            <label for="ThirdBox">
+                                <span class="square three"></span>
+                                <span class="Gender">Coding</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="Button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

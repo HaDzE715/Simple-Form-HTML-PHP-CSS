@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>3D login form </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<form action="get_params_login.php" method="get">
+<div class="form" id="form">
+  <div class="field email">
+    <div class="icon"></div>
+    <input class="input" id="email" type="email" name="mail" placeholder="Email (test@gmail.com)" autocomplete="off" required/>
+  </div>
+  <div class="field email">
+    <div class="icon"></div>
+    <input class="input" id="password" type="text" name="username" placeholder="Username (Hade)" required/>
+  </div>
+  <div class="field password">
+    <div class="icon"></div>
+    <input class="input" id="password" type="password" name ="pass" placeholder="Password (Aa1212)" required/>
+  </div>
+  <button class="button" id="submit">LOGIN
+    <div class="side-top-bottom"></div>
+    <div class="side-left-right"></div>
+  </button><small>Fill in the form</small>
+</div>
+</form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="script/script.js"></script>
+</body>
+</html>
